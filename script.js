@@ -8,7 +8,7 @@ let e = document.querySelector("#valor")
     }
 
     function subtracao() {
-        if (e.textContent > 0) {
+        if (e.textContent > 1) {
             eValue = Number(e.textContent) - 1
             e.textContent = eValue
             num.forEach(e => e.textContent = eValue)
