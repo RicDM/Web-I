@@ -1,16 +1,18 @@
 let e = document.querySelector("#valor")
-    let valor = document.querySelectorAll(".valor")
-    console.log(valor)
+    let num = document.querySelectorAll(".num")
+    console.log(num)
     function soma() {
-        valor = Number(e.textContent) + 1
-        e.textContent = valor > 9 ? valor : `0${valor}`
-        valor.forEach(e => e.textContent = valor > 9 ? valor : `0${valor}`)
+        eValue = Number(e.textContent) + 1
+        e.textContent = eValue
+        num.forEach(e => e.textContent = eValue)
     }
 
     function subtracao() {
         if (e.textContent > 0) {
-            valor = Number(e.textContent) - 1
-            e.textContent = valor > 9 ? valor : `0${valor}`
-            valor.forEach(e => e.textContent = valor > 9 ? valor : `0${valor}`)
+            eValue = Number(e.textContent) - 1
+            e.textContent = eValue
+            num.forEach(e => e.textContent = eValue)
+            
         }
+        
     }
